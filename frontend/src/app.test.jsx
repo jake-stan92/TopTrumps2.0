@@ -5,6 +5,6 @@ import App from "./App.jsx";
 describe("App", () => {
   test("renders", () => {
     render(<App />);
-    expect(screen.getByText("Football !!Top Trumps")).toBeDefined();
+    expect(screen.getByText("Football Top Trumps")).toBeDefined();
   });
 });
