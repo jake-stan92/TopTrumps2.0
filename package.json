@@ -3,6 +3,8 @@
     "husky": "^9.1.1"
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "test": "cd frontend && npm run test"
   }
 }

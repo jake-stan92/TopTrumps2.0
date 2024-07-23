@@ -1,2 +1,3 @@
 #!/bin/sh
-echo "Hello World"
+# lint here not test
+echo "Ready To Push"
