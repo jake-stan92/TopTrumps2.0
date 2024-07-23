@@ -30,7 +30,7 @@ interface StatTitles {
     statTitle7: string;
 }
 
-const statTitles: StatTitles = {
+export const statTitles: StatTitles = {
 	
 			statTitle1: 'Attacking',
 			statTitle2: 'Defending',
@@ -42,7 +42,7 @@ const statTitles: StatTitles = {
 		};
 	
 
-const footballPlayerData: FootballPlayer[] = [
+export const footballPlayerData: FootballPlayer[] = [
 		{
 			id: 1,
 			name: 'Guglielmo Vicario',
@@ -263,4 +263,3 @@ const footballPlayerData: FootballPlayer[] = [
 			},
 		},
 ];
-export default footballPlayerData;
