@@ -20,19 +20,29 @@ interface FootballPlayer {
     };
 }
 
+interface StatTitles {
+    statTitle1: string;
+    statTitle2: string;
+    statTitle3: string;
+    statTitle4: string;
+    statTitle5: string;
+    statTitle6: string;
+    statTitle7: string;
+}
+
+const statTitles: StatTitles = {
+	
+			statTitle1: 'Attacking',
+			statTitle2: 'Defending',
+			statTitle3: 'Skill',
+			statTitle4: 'Movement',
+			statTitle5: 'Power',
+			statTitle6: 'Mentality',
+			statTitle7: 'Goalkeeping',
+		};
+	
+
 const footballPlayerData: FootballPlayer[] = [
-	// [
-		// {
-		// 	statTitle1: 'Attacking',
-		// 	statTitle2: 'Defending',
-		// 	statTitle3: 'Skill',
-		// 	statTitle4: 'Movement',
-		// 	statTitle5: 'Power',
-		// 	statTitle6: 'Mentality',
-		// 	statTitle7: 'Goalkeeping',
-		// },
-	// ],
-	// [
 		{
 			id: 1,
 			name: 'Guglielmo Vicario',
