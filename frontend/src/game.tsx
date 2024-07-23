@@ -3,7 +3,34 @@
 import {useState, useEffect} from 'react';
 import { statTitles, footballPlayerData } from './playerData';
 
+
+export default function Game() {
+const [playerCards, setPlayerCards] = useState([]);
+const [computerCards, setComputerCards] = useState([]);
+
 // when the dom loads shuffle cards and split into two arrays of 5 cards each (playerCards and computerCards)
+useEffect(() => {
+    // shuffleAndSplitCards(footballPlayerData);
+}, []);
+
+function shuffleAndSplitCards(data: []) {
+    const shuffledData = [...data].sort(() => Math.random() - 0.5);
+
+	    const player = [];
+			const computer = [];
+
+			for (let i = 0; i < shuffledData.length; i++) {
+				if (i % 2 === 0) {
+					player.push(shuffledData[i]);
+				} else {
+					computer.push(shuffledData[i]);
+				}
+			}
+			setPlayerCards(player);
+			setComputerCards(computer);
+			}
+
+
 
 //return jsx
     // show computerCards.length and playerCards.length (score)
@@ -17,3 +44,4 @@ import { statTitles, footballPlayerData } from './playerData';
 //display next playerCard and stats
 
 // repeat until one player has all the cards
+}
