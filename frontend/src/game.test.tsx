@@ -1,13 +1,125 @@
-import { describe, expect, test } from "vitest";
-import { render, screen } from "@testing-library/react";
-import game from "./App.jsx";
+import { expect, test } from "vitest";
 import shuffleAndSplitCards from "./game.tsx";
 
 
 // is there 5 playerCards and 5 computerCards?
     test('correctly shuffles and assigns cards to player and computer', () => {
         // Mock your data (similar to footballPlayerData[1])
-        const {playerCards, computerCards} = shuffleAndSplitCards();
+        const mockData = [
+            {
+              id: 1,
+              name: "Lionel Messi",
+              age: 34,
+              country: "Argentina",
+              position: "Forward",
+              club: "Paris Saint-Germain",
+              rating: 95,
+              stat1: 90,
+              stat2: 92,
+              stat3: 88,
+              stat4: 91,
+              stat5: 87,
+            },
+            {
+                id: 1,
+                name: "Lionel Messi",
+                age: 34,
+                country: "Argentina",
+                position: "Forward",
+                club: "Paris Saint-Germain",
+                rating: 95,
+                stat1: 90,
+                stat2: 92,
+                stat3: 88,
+                stat4: 91,
+                stat5: 87,
+              },
+              {
+                id: 1,
+                name: "Lionel Messi",
+                age: 34,
+                country: "Argentina",
+                position: "Forward",
+                club: "Paris Saint-Germain",
+                rating: 95,
+                stat1: 90,
+                stat2: 92,
+                stat3: 88,
+                stat4: 91,
+                stat5: 87,
+              },
+              {
+                id: 1,
+                name: "Lionel Messi",
+                age: 34,
+                country: "Argentina",
+                position: "Forward",
+                club: "Paris Saint-Germain",
+                rating: 95,
+                stat1: 90,
+                stat2: 92,
+                stat3: 88,
+                stat4: 91,
+                stat5: 87,
+              },
+              {
+                id: 1,
+                name: "Lionel Messi",
+                age: 34,
+                country: "Argentina",
+                position: "Forward",
+                club: "Paris Saint-Germain",
+                rating: 95,
+                stat1: 90,
+                stat2: 92,
+                stat3: 88,
+                stat4: 91,
+                stat5: 87,
+              },
+              {
+                id: 1,
+                name: "Lionel Messi",
+                age: 34,
+                country: "Argentina",
+                position: "Forward",
+                club: "Paris Saint-Germain",
+                rating: 95,
+                stat1: 90,
+                stat2: 92,
+                stat3: 88,
+                stat4: 91,
+                stat5: 87,
+              },
+              {
+                id: 1,
+                name: "Lionel Messi",
+                age: 34,
+                country: "Argentina",
+                position: "Forward",
+                club: "Paris Saint-Germain",
+                rating: 95,
+                stat1: 90,
+                stat2: 92,
+                stat3: 88,
+                stat4: 91,
+                stat5: 87,
+              },
+              {
+                id: 1,
+                name: "Lionel Messi",
+                age: 34,
+                country: "Argentina",
+                position: "Forward",
+                club: "Paris Saint-Germain",
+                rating: 95,
+                stat1: 90,
+                stat2: 92,
+                stat3: 88,
+                stat4: 91,
+                stat5: 87,
+              }
+          ];
+        const {playerCards, computerCards} = shuffleAndSplitCards(mockData);
         expect(playerCards.length).toBe(5);
         expect(computerCards.length).toBe(5);
     });
